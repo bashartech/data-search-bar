@@ -1,0 +1,134 @@
+/* Global styles */
+body {
+    width: 100vw;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  /* Search wrapper */
+  .search-wrapper {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .search-wrapper label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .search-wrapper input {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  /* Focus effect on input */
+  .search-wrapper input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* User cards container */
+  .user-cards {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Card styling */
+  .card {
+    margin: 10px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Card hover animation */
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(35, 91, 211, 0.818);
+    background-color:#a2909079 ;
+  }
+  
+  /* Header styling */
+  .card .header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  /* Body styling */
+  .card .body {
+    font-size: 1rem;
+    color: #555;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover effects */
+  .card:hover .header {
+    color: #0056b3;
+  }
+  
+  .card:hover .body {
+    color: #333;
+  }
+  
+.search-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+  }
+  
+  input {
+    font-size: 1rem;
+  }
+  
+  .user-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: .25rem;
+    margin-top: 1rem;
+  }
+  
+  .card {
+    border: 1px solid black;
+    background-color: white;
+    padding: .5rem;
+  }
+  
+  .card > .header {
+    margin-bottom: .25rem;
+  }
+  
+  .card > .body {
+    font-size: .8rem;
+    color: #777;
+  }
+  
+  .hide {
+    display: none;
+  }
